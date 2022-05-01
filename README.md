@@ -48,3 +48,16 @@ git checkout martes (mudar de branch)
 
 ### Merge
 Mescla de branchs
+Você pode precisar resolver conflitos manualmente
+git merge main
+
+
+### Pull Requests
+Mescla de branchs no repositório
+Permite code review
+O repositório resolve os conflitos automaticamente
+
+### Configura o Gitflow
+git flow init
+git flow feature start {nome-da-feature}
+
