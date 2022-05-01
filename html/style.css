@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+body {
+    background-image: url(./imagem/pattern.jpg);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: block;
+}
+header{
+    color: #FA8072;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    text-align: center;
+  }  
+.logo {
+    color: #FA8072;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+
+}
+ul{
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+nav {
+    background-color: #161616;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    display: block;
+    padding: 0 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    transition: all .5s;
+}
+h1, a {
+   color: white;
+}
+.cabecalho {
+    color: white;
+    display: none;
+}
+.cabecalho-item {
+    background-color: transparent;
+    display: none;
+}
+
+.imagem-ajustada {
+    background-color: black;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+nav, ul {
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    margin: 0px;
+    padding: 10px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+li:hover, h1:hover, button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+button:focus ~ ul {
+    height: 260px;
+}
+.titulo{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(9, 9, 9);
+    text-shadow: 2px 2px 5px rgb(247, 35, 7);
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+}
+.titulo-item{
+    font-family:'Nanum Myeongjo', serif;
+    font-size: 1.3rem;
+}
+.servicos {
+    width: 100%;
+    height: 650px;
+}
+.servicos-item{
+    text-align: center;
+    padding: 30px 0;
+    width: 33.3333%;
+    margin: auto;
+    float: left;
+}
+.paragrafo-item {
+    display: flex;
+	justify-content: center;
+	flex-direction: column;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fotos-port{
+    display: flex;
+    width: 900px;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+  figure{
+    width: 200px;
+    margin: 8px 0;
+    border: 1px solid #777;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+  figure img{
+    width: 100%;
+}
+  figure figcaption{
+    text-align: center;
+    padding: 8px 4px;
+}
+.titulo-form{
+    padding: 15px;
+    color: black;
+}
+.titulo-form:hover {
+    cursor: auto;
+    opacity: 1;
+}
+.paragrafo-form{
+padding: 15px;
+font-weight: lighter;
+}
+  
+form div{
+    font-weight: lighter;
+    font-size: 1.2rem;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #F6DEDE;
+    border: 1px dashed #61CE70;
+}
+  
+.enviar {
+    text-align: center;
+}
+
+[type="text"], [type="email"], [type="date"], [type="hora"], textarea {
+    width: 100%;
+    margin: 5px 4px 4px 0px;
+}
+
+form {
+    padding: 0 340px;
+    text-align: left;
+}
+
+.contato {
+    text-align: center;
+    padding-bottom: 30px;
+    height: 1060px;
+}
+
+.contato h1 {
+    font-size: 1.3rem;
+    padding: 15px;
+}
+footer{
+    color: white;
+    background-color: #161616;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0px;
+    width: 100%;
+    height: 15px;
+}
+
+footer p {
+    margin: auto;
+}
+
+@media(max-width: 1100px) {
+    nav {
+        width: auto;
+    }
+    .servicos {
+        display: flex;
+        width: 100%;
+        height: 1350px;
+        margin: auto;
+        align-items: center;
+    }
+    section .servicos-item{
+        text-align: center;
+        padding: 30px 0;
+        width: 50%;
+        margin: auto;
+        float: left;
+    }
+    /*.servicos-item {
+        width: 300px;
+        flex-wrap: wrap;
+        padding: 40px;
+        margin: auto;   
+        justify-content: space-between;
+        display: block;
+    }*/
+    #item-home {
+        width: 80vw;
+        padding-left: 70px;
+    }
+    nav, ul{
+        flex-direction: column;
+    }
+    ul{
+        text-align: center;
+        margin: 0px;
+        height: 0px;
+    }
+    nav{
+        padding: 0px;
+        align-items: flex-start;
+    }
+    h1 {
+        margin: 10px;
+    }
+    button {
+        display: flex;
+    }
+    li, ul {
+        width: 100%;
+    }
+    
+    .fotos-port{
+        width: 600px;
+        margin: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        display: flex;
+    }
+    .cabecalho-item {
+        display: flex;
+        color: white;
+        text-align: center;
+        flex-direction: column;
+    }
+    .formulario, .enviar, .agenda {
+        width: 600px;
+        display: block;
+    }
+    [type="text"], [type="email"], [type="date"], [type="hora"], textarea {
+        width: 600px;
+        margin: 5px 4px 4px 0px;
+    }
+
+    form {
+        padding: 0;
+    }
+    footer {
+        color: white;
+        background-color: #161616;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0px;
+        width: 100%;
+        height: 30px;
+    }
+}
+@media(max-width: 430px) {
+    .servicos {
+        display: block;
+        width: 100%;
+        height: 1860px;
+    }
+    section .servicos-item {
+        width: 100%;
+        padding: 0;
+    }
+    #item-home {
+        padding: 0;
+        width: 100%;
+    }
+    nav, ul{
+        flex-direction: column;
+    }
+    ul{
+        text-align: center;
+        margin: 0px;
+        height: 0px;
+    }
+    nav{
+        padding: 0px;
+        align-items: flex-start;
+    }
+    h1 {
+        margin: 10px;
+    }
+    button {
+        display: flex;
+    }
+    li, ul {
+        width: 100%;
+    }
+    .fotos-port{
+        width: 225px;
+    }
+    .paragrafo-item {
+        width: 320px;
+    }
+    .cabecalho-item {
+        display: flex;
+        color: white;
+        text-align: center;
+        flex-direction: column;
+    }
+    .formulario, .enviar, .agenda {
+        width: 250px;
+        display: block;
+    }
+    [type="text"], [type="email"], [type="date"], [type="hora"], textarea {
+        width: 250px;
+        margin: 5px 4px 4px 0px;}
+    }

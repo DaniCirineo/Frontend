@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Formulário Fale Conosco</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./style.css">
+   		<title>Frida, Pet Modelo</title>
+	</head>
+	<body>
+		<nav>
+			<div class="logo">
+				<a href="./index-responsivo.html">Frida</a>
+			</div>
+	
+			<button>&#9776</button>
+	
+			<ul>
+				<li>
+					<a href="./index-responsivo.html">Home</a>
+				</li>
+				<li>
+					<a href="./portfolio.html">Portfólio</a>
+				</li>
+				<li>
+					<a href="./formularios.html">Contato</a>
+				</li>
+				<li>
+					<p class="cabecalho">Redes Sociais</p>
+				</li>
+				<li>
+					<p class="cabecalho-item">Sair</p>
+				</li>
+			</ul>
+	
+		</nav>
+		<header>
+			<h2> Agende uma hora conosco!</h2>
+		</header>
+
+		<section class="contato">
+
+				<h1 class="titulo-form">Escolha seu dia e horário para um encontro exclusivo com a Frida.</h1>
+				<p class="paragrafo-form">Preencha os campos abaixo:</p>
+
+				<form method="post">
+
+					<div class="formulario">
+						<label for="nome">Nome</label><br>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+
+					<div class="formulario">
+						<label for="email">E-mail</label><br>
+						<input type="email" name="email" id="email" placeholder="Digite seu email">
+					</div>
+
+					<div class="formulario">
+						<label for="mensagem">Mensagem</label><br>
+						<textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" rows="5"></textarea>
+					</div>
+					<div class="agenda">
+						<label for="data">Agendamento</label>
+						<input type="date" id="data" name="dataAgenda">
+					</div>
+					<div class="agenda">
+						<label for="hora">Horário</label>
+						<input type="time" id="hora" name="horaAgenda">
+					</div>
+					<div class="enviar">
+						<input type="submit" >
+					</div>
+				</form>
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Daniella Cirineo</p>
+		</footer>
+		
+	</body>
+</html>
