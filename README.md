@@ -24,6 +24,9 @@ Arquivo B | Versão 1 | Versão 2
 
 Informaçao de alteração
 - Após testado todo seu código
+- git add *
+- git commit -m "mensagem"
+- git push (enviar alterações para o repositório)
 
 ## GitFlow
 Fluxo do Git
